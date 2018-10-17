@@ -1,0 +1,8 @@
+{
+  "zlib": "1.2",
+  "libpng": "1.6",
+  "libtiff": "4.0",
+  "cxx_compiler": "vs2015",
+  "c_compiler": "vs2015",
+  "jpeg": "9"
+}

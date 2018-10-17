@@ -1,0 +1,21 @@
+{
+  "arch": "x86_64",
+  "build": "py35h20b85fd_1",
+  "build_number": 1,
+  "depends": [
+    "jpeg >=9b,<10a",
+    "libpng >=1.6.32,<1.7.0a0",
+    "libtiff >=4.0.9,<5.0a0",
+    "numpy >=1.11.3,<2.0a0",
+    "python >=3.5,<3.6.0a0",
+    "vc 14.*",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "license": "BSD 3-clause",
+  "license_family": "BSD",
+  "name": "opencv",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1512685808746,
+  "version": "3.3.1"
+}

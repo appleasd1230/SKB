@@ -1,0 +1,283 @@
+# This file created by conda-build 0+unknown
+# meta.yaml template originally from:
+# C:\ci\containers\000035alhrp\tmp\build\80754af9\rsync-recipes\opencv-3.3.1-python3.5cxx_compilervs2015c_compilervs2015-on-winbuilder, last modified Thu Dec  7 14:10:47 2017
+# ------------------------------------------------
+
+package:
+    name: opencv
+    version: 3.3.1
+source:
+    -   sha256: e59412c7e0d398113b1e454d600fcdff54cd77100a84483ac0d82bbf52496932
+        url: https://github.com/opencv/opencv/archive/3.3.1.zip
+    -   folder: opencv_contrib-3.3.1
+        sha256: 6f3ce148dc6e147496f0dbec1c99e917e13bf138f5a8ccfc3765f5c2372bd331
+        url: https://github.com/opencv/opencv_contrib/archive/3.3.1.tar.gz
+build:
+    number: '1'
+    run_exports:
+        - opencv >=3.3.1,<3.3.2.0a0
+    string: py35h20b85fd_1
+requirements:
+    build:
+        - certifi 2017.11.5 py35h456c6ae_0
+        - cmake 3.9.4 h4b83b1b_0
+        - eigen 3.3.3 h0d8b05e_0
+        - icc_rt 2017.0.4 h97af966_0
+        - intel-openmp 2018.0.0 hd92c6cd_8
+        - jom 1.1.2 h3bd88b9_0
+        - jpeg 9b hb83a4c4_2
+        - libpng 1.6.32 h140d38e_4
+        - libtiff 4.0.9 h0f13578_0
+        - m2-bash 4.3.042 5
+        - m2-ca-certificates 20150426 103
+        - m2-coreutils 8.25 102
+        - m2-curl 7.47.1 3
+        - m2-db 5.3.28 3
+        - m2-expat 2.1.1 2
+        - m2-filesystem 2016.04 4
+        - m2-findutils 4.6.0 2
+        - m2-gcc-libs 5.3.0 4
+        - m2-gdbm 1.11 4
+        - m2-git 2.8.1 2
+        - m2-gmp 6.1.0 3
+        - m2-gzip 1.7 2
+        - m2-heimdal 1.5.3 10
+        - m2-heimdal-libs 1.5.3 10
+        - m2-icu 56.1 2
+        - m2-info 6.0 2
+        - m2-less 481 2
+        - m2-libcrypt 1.3 2
+        - m2-libcurl 7.47.1 3
+        - m2-libdb 5.3.28 3
+        - m2-libedit 3.1 20150326
+        - m2-libexpat 2.1.1 2
+        - m2-libffi 3.2.1 2
+        - m2-libgdbm 1.11 4
+        - m2-libiconv 1.14 3
+        - m2-libidn 1.32 2
+        - m2-libintl 0.19.7 4
+        - m2-libmetalink 0.1.2 3
+        - m2-libopenssl 1.0.2.g 2
+        - m2-libp11-kit 0.23.2 2
+        - m2-libpcre 8.38 2
+        - m2-libreadline 6.3.008 8
+        - m2-libsqlite 3.10.0.0 2
+        - m2-libssh2 1.6.0 2
+        - m2-libtasn1 4.7 2
+        - m2-msys2-runtime 2.5.0.17080.65c939c 3
+        - m2-ncurses 6.0.20160220 2
+        - m2-openssh 7.1p2 2
+        - m2-openssl 1.0.2.g 2
+        - m2-p11-kit 0.23.2 2
+        - m2-perl 5.22.1 2
+        - m2-perl-authen-sasl 2.16 3
+        - m2-perl-convert-binhex 1.123 3
+        - m2-perl-encode-locale 1.04 2
+        - m2-perl-error 0.17024 2
+        - m2-perl-file-listing 6.04 3
+        - m2-perl-html-parser 3.71 4
+        - m2-perl-html-tagset 3.20 3
+        - m2-perl-http-cookies 6.01 3
+        - m2-perl-http-daemon 6.01 3
+        - m2-perl-http-date 6.02 3
+        - m2-perl-http-message 6.06 3
+        - m2-perl-http-negotiate 6.01 3
+        - m2-perl-io-socket-ssl 2.016 2
+        - m2-perl-io-stringy 2.111 2
+        - m2-perl-libwww 6.13 2
+        - m2-perl-lwp-mediatypes 6.02 3
+        - m2-perl-mailtools 2.14 2
+        - m2-perl-mime-tools 5.506 2
+        - m2-perl-net-http 6.09 2
+        - m2-perl-net-smtp-ssl 1.02 2
+        - m2-perl-net-ssleay 1.72 2
+        - m2-perl-termreadkey 2.33 2
+        - m2-perl-timedate 2.30 3
+        - m2-perl-uri 1.68 2
+        - m2-perl-www-robotrules 6.02 3
+        - m2-sed 4.2.2 3
+        - m2-vim 7.4.1721 2
+        - m2-zlib 1.2.8 4
+        - m2w64-libwinpthread-git 5.0.0.4634.697f757 2
+        - m2w64-pkg-config 0.29.1 2
+        - mkl 2018.0.1 h2108138_4
+        - msys2-conda-epoch 20160418 1
+        - numpy 1.11.3 py35h4fc39be_3
+        - pip 9.0.1 py35h691316f_4
+        - python 3.5.4 h1357f44_23
+        - setuptools 36.5.0 py35h21a22e4_0
+        - vc 14 h2379b0c_2
+        - vs2015_runtime 14.0.25123 hd4c4e62_2
+        - vs2015_win-64 14.0.25123 hf5d5b87_2
+        - wheel 0.30.0 py35h38a90bc_1
+        - wincertstore 0.2 py35hfebbdb8_0
+        - zlib 1.2.11 h8395fce_2
+    host:
+        - certifi 2017.11.5 py35h456c6ae_0
+        - cmake 3.9.4 h4b83b1b_0
+        - eigen 3.3.3 h0d8b05e_0
+        - icc_rt 2017.0.4 h97af966_0
+        - intel-openmp 2018.0.0 hd92c6cd_8
+        - jom 1.1.2 h3bd88b9_0
+        - jpeg 9b hb83a4c4_2
+        - libpng 1.6.32 h140d38e_4
+        - libtiff 4.0.9 h0f13578_0
+        - m2-bash 4.3.042 5
+        - m2-ca-certificates 20150426 103
+        - m2-coreutils 8.25 102
+        - m2-curl 7.47.1 3
+        - m2-db 5.3.28 3
+        - m2-expat 2.1.1 2
+        - m2-filesystem 2016.04 4
+        - m2-findutils 4.6.0 2
+        - m2-gcc-libs 5.3.0 4
+        - m2-gdbm 1.11 4
+        - m2-git 2.8.1 2
+        - m2-gmp 6.1.0 3
+        - m2-gzip 1.7 2
+        - m2-heimdal 1.5.3 10
+        - m2-heimdal-libs 1.5.3 10
+        - m2-icu 56.1 2
+        - m2-info 6.0 2
+        - m2-less 481 2
+        - m2-libcrypt 1.3 2
+        - m2-libcurl 7.47.1 3
+        - m2-libdb 5.3.28 3
+        - m2-libedit 3.1 20150326
+        - m2-libexpat 2.1.1 2
+        - m2-libffi 3.2.1 2
+        - m2-libgdbm 1.11 4
+        - m2-libiconv 1.14 3
+        - m2-libidn 1.32 2
+        - m2-libintl 0.19.7 4
+        - m2-libmetalink 0.1.2 3
+        - m2-libopenssl 1.0.2.g 2
+        - m2-libp11-kit 0.23.2 2
+        - m2-libpcre 8.38 2
+        - m2-libreadline 6.3.008 8
+        - m2-libsqlite 3.10.0.0 2
+        - m2-libssh2 1.6.0 2
+        - m2-libtasn1 4.7 2
+        - m2-msys2-runtime 2.5.0.17080.65c939c 3
+        - m2-ncurses 6.0.20160220 2
+        - m2-openssh 7.1p2 2
+        - m2-openssl 1.0.2.g 2
+        - m2-p11-kit 0.23.2 2
+        - m2-perl 5.22.1 2
+        - m2-perl-authen-sasl 2.16 3
+        - m2-perl-convert-binhex 1.123 3
+        - m2-perl-encode-locale 1.04 2
+        - m2-perl-error 0.17024 2
+        - m2-perl-file-listing 6.04 3
+        - m2-perl-html-parser 3.71 4
+        - m2-perl-html-tagset 3.20 3
+        - m2-perl-http-cookies 6.01 3
+        - m2-perl-http-daemon 6.01 3
+        - m2-perl-http-date 6.02 3
+        - m2-perl-http-message 6.06 3
+        - m2-perl-http-negotiate 6.01 3
+        - m2-perl-io-socket-ssl 2.016 2
+        - m2-perl-io-stringy 2.111 2
+        - m2-perl-libwww 6.13 2
+        - m2-perl-lwp-mediatypes 6.02 3
+        - m2-perl-mailtools 2.14 2
+        - m2-perl-mime-tools 5.506 2
+        - m2-perl-net-http 6.09 2
+        - m2-perl-net-smtp-ssl 1.02 2
+        - m2-perl-net-ssleay 1.72 2
+        - m2-perl-termreadkey 2.33 2
+        - m2-perl-timedate 2.30 3
+        - m2-perl-uri 1.68 2
+        - m2-perl-www-robotrules 6.02 3
+        - m2-sed 4.2.2 3
+        - m2-vim 7.4.1721 2
+        - m2-zlib 1.2.8 4
+        - m2w64-libwinpthread-git 5.0.0.4634.697f757 2
+        - m2w64-pkg-config 0.29.1 2
+        - mkl 2018.0.1 h2108138_4
+        - msys2-conda-epoch 20160418 1
+        - numpy 1.11.3 py35h4fc39be_3
+        - pip 9.0.1 py35h691316f_4
+        - python 3.5.4 h1357f44_23
+        - setuptools 36.5.0 py35h21a22e4_0
+        - vc 14 h2379b0c_2
+        - vs2015_runtime 14.0.25123 hd4c4e62_2
+        - wheel 0.30.0 py35h38a90bc_1
+        - wincertstore 0.2 py35hfebbdb8_0
+        - zlib 1.2.11 h8395fce_2
+    run:
+        - jpeg >=9b,<10a
+        - libpng >=1.6.32,<1.7.0a0
+        - libtiff >=4.0.9,<5.0a0
+        - numpy  >=1.11.3,<2.0a0
+        - python >=3.5,<3.6.0a0
+        - vc 14.*
+        - zlib >=1.2.11,<1.3.0a0
+test:
+    commands:
+        - if not exist %PREFIX%\\Library\\bin\\opencv_aruco331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_bgsegm331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_calib3d331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_ccalib331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_core331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_datasets331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_dnn331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_dpm331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_face331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_features2d331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_flann331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_fuzzy331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_highgui331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_imgcodecs331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_imgproc331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_line_descriptor331.dll exit
+            1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_ml331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_objdetect331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_optflow331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_phase_unwrapping331.dll exit
+            1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_photo331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_plot331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_reg331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_rgbd331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_saliency331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_shape331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_stereo331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_stitching331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_structured_light331.dll exit
+            1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_superres331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_surface_matching331.dll exit
+            1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_text331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_tracking331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_video331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_videoio331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_videostab331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_xfeatures2d331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_ximgproc331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_xobjdetect331.dll exit 1
+        - if not exist %PREFIX%\\Library\\bin\\opencv_xphoto331.dll exit 1
+    imports:
+        - cv2
+        - cv2.xfeatures2d
+    requires:
+        - vs2015_win-64
+about:
+    description: 'OpenCV (Open Source Computer Vision Library) includes several hundreds
+        of computer vision algorithms.
+
+        It has a modular structure,which means that the package includes several shared
+        or static libraries.
+
+        '
+    doc_source_url: https://github.com/opencv/opencv/tree/master/doc
+    doc_url: http://docs.opencv.org/
+    home: http://opencv.org/
+    license: BSD 3-clause
+    license_family: BSD
+    summary: Computer vision and machine learning software library.
+extra:
+    copy_test_source_files: true
+    final: true

@@ -1,0 +1,36 @@
+# This file created by conda-build 1.21.0
+# meta.yaml template originally from:
+# C:\jenkins\workspace\conda-dlib\ARCH\x64\PYTHON_VERSION\3.5\label\windows\conda, last modified Fri Jun 17 00:28:05 2016
+# ------------------------------------------------
+
+package:
+    name: dlib
+    version: '18.18'
+source:
+    fn: dlib-18.18.tar.bz2
+    patches:
+        - cmake_static_boost.patch
+    sha1: 21421b55e22387dfa428a221653172bf740b55ed
+    url: http://sourceforge.net/projects/dclib/files/dlib/v18.18/dlib-18.18.tar.bz2/download
+build:
+    number: '2'
+requirements:
+    build:
+        - python
+        - cmake
+        - numpy >=1.10
+        - boost 1.59.*
+        - libpng 1.6.*
+    run:
+        - python
+        - numpy >=1.10
+        - boost 1.59.*
+        - libpng 1.6.*
+test:
+    imports:
+        - dlib
+    requires:
+        - pillow
+about:
+    home: http://dlib.net/
+    license: Boost Software License
