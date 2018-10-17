@@ -1,0 +1,11 @@
+{
+  "paths": [
+    {
+      "_path": "Lib/site-packages/dlib.pyd",
+      "path_type": "hardlink",
+      "sha256": "21181b6270009fd771ee91d4f0a1fa32d125fd7d4645aa53706d434a9df8270f",
+      "size_in_bytes": 5171200
+    }
+  ],
+  "paths_version": 1
+}

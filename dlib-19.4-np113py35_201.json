@@ -1,0 +1,46 @@
+{
+  "arch": "x86_64",
+  "build": "np113py35_201",
+  "build_number": 201,
+  "channel": "https://conda.anaconda.org/conda-forge/win-64",
+  "constrains": [],
+  "depends": [
+    "boost 1.64.*",
+    "libpng >=1.6.28,<1.7",
+    "numpy 1.13*",
+    "python 3.5*"
+  ],
+  "extracted_package_dir": "C:\\Users\\skbadmin\\AppData\\Local\\conda\\conda\\pkgs\\dlib-19.4-np113py35_201",
+  "features": "",
+  "files": [
+    "Lib/site-packages/dlib.pyd"
+  ],
+  "fn": "dlib-19.4-np113py35_201.tar.bz2",
+  "license": "Boost 1.0",
+  "link": {
+    "source": "C:\\Users\\skbadmin\\AppData\\Local\\conda\\conda\\pkgs\\dlib-19.4-np113py35_201",
+    "type": 1
+  },
+  "md5": "1efb75e78f3fe493c65fde57e15c7fa1",
+  "name": "dlib",
+  "package_tarball_full_path": "C:\\Users\\skbadmin\\AppData\\Local\\conda\\conda\\pkgs\\dlib-19.4-np113py35_201.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/dlib.pyd",
+        "path_type": "hardlink",
+        "sha256": "21181b6270009fd771ee91d4f0a1fa32d125fd7d4645aa53706d434a9df8270f",
+        "sha256_in_prefix": "21181b6270009fd771ee91d4f0a1fa32d125fd7d4645aa53706d434a9df8270f",
+        "size_in_bytes": 5171200
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "win32",
+  "requested_spec": "None",
+  "size": 2134284,
+  "subdir": "win-64",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/dlib-19.4-np113py35_201.tar.bz2",
+  "version": "19.4"
+}
