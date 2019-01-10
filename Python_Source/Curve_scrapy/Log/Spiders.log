@@ -1,0 +1,9 @@
+[2019-01-04 23:00:06 ] Grab the TWD_xls form web Success!
+[2019-01-04 23:00:06 ] Write and save COCurve20190108.xls Success!
+[2019-01-04 23:00:06 ] Get data from COCurve20190108.xls Success!
+[2019-01-04 23:00:06 ] Generate AddOnRate_TWD_20190108.csv Success!
+[2019-01-04 23:00:08 ] Grab the USD_xls form web Success!
+[2019-01-04 23:00:08 ] Write and save USDDIBCurve20190108.xls Success!
+[2019-01-04 23:00:08 ] Get data from USDDIBCurve20190108.xls Success!
+[2019-01-04 23:00:08 ] Generate AddOnRate_USD_20190108.csv Success!
+[2019-01-04 23:00:09 ] Upload the files to FTP success!
